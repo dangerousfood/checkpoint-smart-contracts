@@ -54,6 +54,6 @@ contract Checkpoint {
       //TODO
   } 
   function validateData(bytes32 root, bytes32[] memory branch, bytes32 data) public pure returns(bool) {
-      //TODO
+      return (root == calculateBranch(branch, data)[0]);
   }
 }
